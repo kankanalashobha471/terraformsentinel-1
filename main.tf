@@ -10,7 +10,7 @@ resource "aws_iam_policy" "policy" {
     Statement = [
       {
         Effect   = "Allow"
-        Resource = "arn:aws:s3:::bucket-iam-006"
+        Resource = ["arn:aws:s3:::bucket-iam-006", "*"]
       },
     ]
   })
