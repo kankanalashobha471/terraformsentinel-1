@@ -9,8 +9,8 @@ resource "aws_iam_policy" "policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Effect   = "Deny"
-        Resource = "*"
+        Effect   = "Allow"
+        Resource = "arn:aws:s3:::bucket-iam-006"
       },
     ]
   })
